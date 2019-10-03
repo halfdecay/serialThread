@@ -19,7 +19,8 @@ SerialMainWindow::~SerialMainWindow()
 
 void SerialMainWindow::labelViewer()
 {
-    SerialStepperThread.sendSerialData(ui->label->text());
+    QString resp = SerialStepperThread.dataSerial();
+    ui->label->setText(resp);
 }
 
 

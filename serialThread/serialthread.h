@@ -31,7 +31,7 @@ public slots:
 
     void runSerial();
     void setRunning(bool Running);
-    void setdataSerial(QString dataSerial);
+    void setDataSerial(QString dataSerial);
 };
 
 #endif // SERIALTHREAD_H

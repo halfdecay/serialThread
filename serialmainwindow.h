@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <QThread>
-#include <serialthread.h>
+//#include <serialthread.h>
+#include <serialThread/serialthread.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SerialMainWindow; }

@@ -17,12 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    serialmainwindow.cpp \
-    serialthread.cpp
+    serialThread/serialthread.cpp \
+    serialmainwindow.cpp
+
 
 HEADERS += \
-    serialmainwindow.h \
-    serialthread.h
+    serialThread/serialthread.h \
+    serialmainwindow.h
+
 
 FORMS += \
     serialmainwindow.ui
