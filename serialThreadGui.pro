@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui widgets serialport
+requires(qtConfig(combobox))
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,16 +19,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     serialThread/serialthread.cpp \
-    serialmainwindow.cpp
+#    serialThread/settingsdialog.cpp \
+    serialmainwindow.cpp \
+    settingsdialog.cpp
 
 
 HEADERS += \
     serialThread/serialthread.h \
-    serialmainwindow.h
+#    serialThread/settingsdialog.h \
+    serialmainwindow.h \
+    settingsdialog.h
 
 
 FORMS += \
-    serialmainwindow.ui
+#    serialThread/settingsdialog.ui \
+    serialmainwindow.ui \
+    settingsdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
